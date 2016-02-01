@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3A6E2E51C5FF1DE000F5C68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6E2E41C5FF1DE000F5C68 /* AppDelegate.swift */; };
+		A3A6E2E71C5FF1DE000F5C68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6E2E61C5FF1DE000F5C68 /* ViewController.swift */; };
+		A3A6E2EA1C5FF1DE000F5C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A6E2E81C5FF1DE000F5C68 /* Main.storyboard */; };
+		A3A6E2EC1C5FF1DE000F5C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A6E2EB1C5FF1DE000F5C68 /* Assets.xcassets */; };
+		A3A6E2EF1C5FF1DE000F5C68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A6E2ED1C5FF1DE000F5C68 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A3A6E2E11C5FF1DE000F5C68 /* Emoji Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A6E2E41C5FF1DE000F5C68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3A6E2E61C5FF1DE000F5C68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3A6E2E91C5FF1DE000F5C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3A6E2EB1C5FF1DE000F5C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3A6E2EE1C5FF1DE000F5C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3A6E2F01C5FF1DE000F5C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3A6E2DE1C5FF1DE000F5C68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3A6E2D81C5FF1DE000F5C68 = {
+			isa = PBXGroup;
+			children = (
+				A3A6E2E31C5FF1DE000F5C68 /* Emoji Keyboard */,
+				A3A6E2E21C5FF1DE000F5C68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3A6E2E21C5FF1DE000F5C68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6E2E11C5FF1DE000F5C68 /* Emoji Keyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3A6E2E31C5FF1DE000F5C68 /* Emoji Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6E2E41C5FF1DE000F5C68 /* AppDelegate.swift */,
+				A3A6E2E61C5FF1DE000F5C68 /* ViewController.swift */,
+				A3A6E2E81C5FF1DE000F5C68 /* Main.storyboard */,
+				A3A6E2EB1C5FF1DE000F5C68 /* Assets.xcassets */,
+				A3A6E2ED1C5FF1DE000F5C68 /* LaunchScreen.storyboard */,
+				A3A6E2F01C5FF1DE000F5C68 /* Info.plist */,
+			);
+			path = "Emoji Keyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3A6E2E01C5FF1DE000F5C68 /* Emoji Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A6E2F31C5FF1DE000F5C68 /* Build configuration list for PBXNativeTarget "Emoji Keyboard" */;
+			buildPhases = (
+				A3A6E2DD1C5FF1DE000F5C68 /* Sources */,
+				A3A6E2DE1C5FF1DE000F5C68 /* Frameworks */,
+				A3A6E2DF1C5FF1DE000F5C68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Emoji Keyboard";
+			productName = "Emoji Keyboard";
+			productReference = A3A6E2E11C5FF1DE000F5C68 /* Emoji Keyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3A6E2D91C5FF1DE000F5C68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = OnMilwaukee;
+				TargetAttributes = {
+					A3A6E2E01C5FF1DE000F5C68 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = A3A6E2DC1C5FF1DE000F5C68 /* Build configuration list for PBXProject "Emoji Keyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3A6E2D81C5FF1DE000F5C68;
+			productRefGroup = A3A6E2E21C5FF1DE000F5C68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3A6E2E01C5FF1DE000F5C68 /* Emoji Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3A6E2DF1C5FF1DE000F5C68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A6E2EF1C5FF1DE000F5C68 /* LaunchScreen.storyboard in Resources */,
+				A3A6E2EC1C5FF1DE000F5C68 /* Assets.xcassets in Resources */,
+				A3A6E2EA1C5FF1DE000F5C68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3A6E2DD1C5FF1DE000F5C68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A6E2E71C5FF1DE000F5C68 /* ViewController.swift in Sources */,
+				A3A6E2E51C5FF1DE000F5C68 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3A6E2E81C5FF1DE000F5C68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3A6E2E91C5FF1DE000F5C68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3A6E2ED1C5FF1DE000F5C68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3A6E2EE1C5FF1DE000F5C68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3A6E2F11C5FF1DE000F5C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3A6E2F21C5FF1DE000F5C68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3A6E2F41C5FF1DE000F5C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Emoji Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3A6E2F51C5FF1DE000F5C68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Emoji Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3A6E2DC1C5FF1DE000F5C68 /* Build configuration list for PBXProject "Emoji Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A6E2F11C5FF1DE000F5C68 /* Debug */,
+				A3A6E2F21C5FF1DE000F5C68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A6E2F31C5FF1DE000F5C68 /* Build configuration list for PBXNativeTarget "Emoji Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A6E2F41C5FF1DE000F5C68 /* Debug */,
+				A3A6E2F51C5FF1DE000F5C68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3A6E2D91C5FF1DE000F5C68 /* Project object */;
+}
