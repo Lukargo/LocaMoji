@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Milwaukee Emoji.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>A3A6E2E01C5FF1DE000F5C68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A3A6E2F91C5FF204000F5C68</key>
 		<dict>
 			<key>primary</key>
 			<true/>

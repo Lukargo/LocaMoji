@@ -7,25 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A34514421C7E72920000F1F5 /* emojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34514401C7E72920000F1F5 /* emojiCell.swift */; };
+		A34514431C7E72920000F1F5 /* emojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A34514411C7E72920000F1F5 /* emojiCell.xib */; };
+		A34514451C7FC09E0000F1F5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34514441C7FC09E0000F1F5 /* Media.xcassets */; };
+		A345145A1C7FD1BE0000F1F5 /* accordion.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514461C7FD1BE0000F1F5 /* accordion.png */; };
+		A345145B1C7FD1BE0000F1F5 /* bar-dice.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514471C7FD1BE0000F1F5 /* bar-dice.png */; };
+		A345145C1C7FD1BE0000F1F5 /* beastie.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514481C7FD1BE0000F1F5 /* beastie.png */; };
+		A345145D1C7FD1BE0000F1F5 /* bratwurst.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514491C7FD1BE0000F1F5 /* bratwurst.png */; };
+		A345145E1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144A1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png */; };
+		A345145F1C7FD1BE0000F1F5 /* cheesehead-female.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144B1C7FD1BE0000F1F5 /* cheesehead-female.png */; };
+		A34514601C7FD1BE0000F1F5 /* cheesehead-male.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144C1C7FD1BE0000F1F5 /* cheesehead-male.png */; };
+		A34514611C7FD1BE0000F1F5 /* dome.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144D1C7FD1BE0000F1F5 /* dome.png */; };
+		A34514631C7FD1BE0000F1F5 /* 0hoan-bridge.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144F1C7FD1BE0000F1F5 /* 0hoan-bridge.png */; };
+		A34514641C7FD1BE0000F1F5 /* lake-michigan.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514501C7FD1BE0000F1F5 /* lake-michigan.png */; };
+		A34514651C7FD1BE0000F1F5 /* laverne.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514511C7FD1BE0000F1F5 /* laverne.png */; };
+		A34514661C7FD1BE0000F1F5 /* milverine.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514521C7FD1BE0000F1F5 /* milverine.png */; };
+		A34514671C7FD1BE0000F1F5 /* milwaukee-flag.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514531C7FD1BE0000F1F5 /* milwaukee-flag.png */; };
+		A34514681C7FD1BE0000F1F5 /* old-fashioned.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514541C7FD1BE0000F1F5 /* old-fashioned.png */; };
+		A34514691C7FD1BE0000F1F5 /* rumchata.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514551C7FD1BE0000F1F5 /* rumchata.png */; };
+		A345146A1C7FD1BE0000F1F5 /* shirley.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514561C7FD1BE0000F1F5 /* shirley.png */; };
+		A345146D1C7FD1BE0000F1F5 /* the-calling.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514591C7FD1BE0000F1F5 /* the-calling.png */; };
+		A34514711C84DCEA0000F1F5 /* domes.png in Resources */ = {isa = PBXBuildFile; fileRef = A345146E1C84DCEA0000F1F5 /* domes.png */; };
+		A34514721C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png in Resources */ = {isa = PBXBuildFile; fileRef = A345146F1C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png */; };
+		A34514731C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514701C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png */; };
+		A34514751C8526000000F1F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A34514741C8526000000F1F5 /* LaunchScreen.xib */; };
 		A3A6E2E51C5FF1DE000F5C68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6E2E41C5FF1DE000F5C68 /* AppDelegate.swift */; };
 		A3A6E2E71C5FF1DE000F5C68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6E2E61C5FF1DE000F5C68 /* ViewController.swift */; };
 		A3A6E2EA1C5FF1DE000F5C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A6E2E81C5FF1DE000F5C68 /* Main.storyboard */; };
 		A3A6E2EC1C5FF1DE000F5C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A6E2EB1C5FF1DE000F5C68 /* Assets.xcassets */; };
-		A3A6E2EF1C5FF1DE000F5C68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A6E2ED1C5FF1DE000F5C68 /* LaunchScreen.storyboard */; };
+		A3A6E2FD1C5FF204000F5C68 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6E2FC1C5FF204000F5C68 /* KeyboardViewController.swift */; };
+		A3A6E3011C5FF204000F5C68 /* Milwaukee Emoji.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A3D5FB7B1C61679E00A4EEA9 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D5FB7A1C61679E00A4EEA9 /* Keyboard.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A3A6E2FF1C5FF204000F5C68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A6E2D91C5FF1DE000F5C68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A6E2F91C5FF204000F5C68;
+			remoteInfo = "Milwaukee Emoji";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A3A6E3051C5FF204000F5C68 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A3A6E3011C5FF204000F5C68 /* Milwaukee Emoji.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A3A6E2E11C5FF1DE000F5C68 /* Emoji Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34514401C7E72920000F1F5 /* emojiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = emojiCell.swift; sourceTree = "<group>"; };
+		A34514411C7E72920000F1F5 /* emojiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = emojiCell.xib; sourceTree = "<group>"; };
+		A34514441C7FC09E0000F1F5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		A34514461C7FD1BE0000F1F5 /* accordion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accordion.png; sourceTree = "<group>"; };
+		A34514471C7FD1BE0000F1F5 /* bar-dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-dice.png"; sourceTree = "<group>"; };
+		A34514481C7FD1BE0000F1F5 /* beastie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beastie.png; sourceTree = "<group>"; };
+		A34514491C7FD1BE0000F1F5 /* bratwurst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bratwurst.png; sourceTree = "<group>"; };
+		A345144A1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bronze-fonz-thumbs.png"; sourceTree = "<group>"; };
+		A345144B1C7FD1BE0000F1F5 /* cheesehead-female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheesehead-female.png"; sourceTree = "<group>"; };
+		A345144C1C7FD1BE0000F1F5 /* cheesehead-male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheesehead-male.png"; sourceTree = "<group>"; };
+		A345144D1C7FD1BE0000F1F5 /* dome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dome.png; sourceTree = "<group>"; };
+		A345144F1C7FD1BE0000F1F5 /* 0hoan-bridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0hoan-bridge.png"; sourceTree = "<group>"; };
+		A34514501C7FD1BE0000F1F5 /* lake-michigan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lake-michigan.png"; sourceTree = "<group>"; };
+		A34514511C7FD1BE0000F1F5 /* laverne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laverne.png; sourceTree = "<group>"; };
+		A34514521C7FD1BE0000F1F5 /* milverine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = milverine.png; sourceTree = "<group>"; };
+		A34514531C7FD1BE0000F1F5 /* milwaukee-flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "milwaukee-flag.png"; sourceTree = "<group>"; };
+		A34514541C7FD1BE0000F1F5 /* old-fashioned.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "old-fashioned.png"; sourceTree = "<group>"; };
+		A34514551C7FD1BE0000F1F5 /* rumchata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rumchata.png; sourceTree = "<group>"; };
+		A34514561C7FD1BE0000F1F5 /* shirley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirley.png; sourceTree = "<group>"; };
+		A34514591C7FD1BE0000F1F5 /* the-calling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "the-calling.png"; sourceTree = "<group>"; };
+		A345146E1C84DCEA0000F1F5 /* domes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = domes.png; sourceTree = "<group>"; };
+		A345146F1C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shorts-with-melting-snow-female.png"; sourceTree = "<group>"; };
+		A34514701C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shorts-with-melting-snow-male.png"; sourceTree = "<group>"; };
+		A34514741C8526000000F1F5 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		A3A6E2E11C5FF1DE000F5C68 /* LocaMoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocaMoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A6E2E41C5FF1DE000F5C68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3A6E2E61C5FF1DE000F5C68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3A6E2E91C5FF1DE000F5C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3A6E2EB1C5FF1DE000F5C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A3A6E2EE1C5FF1DE000F5C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3A6E2F01C5FF1DE000F5C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Milwaukee Emoji.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A6E2FC1C5FF204000F5C68 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		A3A6E2FE1C5FF204000F5C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3D5FB7A1C61679E00A4EEA9 /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A3A6E2DE1C5FF1DE000F5C68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A6E2F71C5FF204000F5C68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				A3A6E2E31C5FF1DE000F5C68 /* Emoji Keyboard */,
+				A3A6E2FB1C5FF204000F5C68 /* Milwaukee Emoji */,
 				A3A6E2E21C5FF1DE000F5C68 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,7 +131,8 @@
 		A3A6E2E21C5FF1DE000F5C68 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3A6E2E11C5FF1DE000F5C68 /* Emoji Keyboard.app */,
+				A3A6E2E11C5FF1DE000F5C68 /* LocaMoji.app */,
+				A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,10 +144,51 @@
 				A3A6E2E61C5FF1DE000F5C68 /* ViewController.swift */,
 				A3A6E2E81C5FF1DE000F5C68 /* Main.storyboard */,
 				A3A6E2EB1C5FF1DE000F5C68 /* Assets.xcassets */,
-				A3A6E2ED1C5FF1DE000F5C68 /* LaunchScreen.storyboard */,
 				A3A6E2F01C5FF1DE000F5C68 /* Info.plist */,
+				A34514741C8526000000F1F5 /* LaunchScreen.xib */,
 			);
 			path = "Emoji Keyboard";
+			sourceTree = "<group>";
+		};
+		A3A6E2FB1C5FF204000F5C68 /* Milwaukee Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				A3D5FBD91C62B9A000A4EEA9 /* emojis */,
+				A3A6E2FC1C5FF204000F5C68 /* KeyboardViewController.swift */,
+				A3A6E2FE1C5FF204000F5C68 /* Info.plist */,
+				A3D5FB7A1C61679E00A4EEA9 /* Keyboard.xib */,
+				A34514401C7E72920000F1F5 /* emojiCell.swift */,
+				A34514411C7E72920000F1F5 /* emojiCell.xib */,
+				A34514441C7FC09E0000F1F5 /* Media.xcassets */,
+			);
+			path = "Milwaukee Emoji";
+			sourceTree = "<group>";
+		};
+		A3D5FBD91C62B9A000A4EEA9 /* emojis */ = {
+			isa = PBXGroup;
+			children = (
+				A345146E1C84DCEA0000F1F5 /* domes.png */,
+				A345146F1C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png */,
+				A34514701C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png */,
+				A34514461C7FD1BE0000F1F5 /* accordion.png */,
+				A34514471C7FD1BE0000F1F5 /* bar-dice.png */,
+				A34514481C7FD1BE0000F1F5 /* beastie.png */,
+				A34514491C7FD1BE0000F1F5 /* bratwurst.png */,
+				A345144A1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png */,
+				A345144B1C7FD1BE0000F1F5 /* cheesehead-female.png */,
+				A345144C1C7FD1BE0000F1F5 /* cheesehead-male.png */,
+				A345144D1C7FD1BE0000F1F5 /* dome.png */,
+				A345144F1C7FD1BE0000F1F5 /* 0hoan-bridge.png */,
+				A34514501C7FD1BE0000F1F5 /* lake-michigan.png */,
+				A34514511C7FD1BE0000F1F5 /* laverne.png */,
+				A34514521C7FD1BE0000F1F5 /* milverine.png */,
+				A34514531C7FD1BE0000F1F5 /* milwaukee-flag.png */,
+				A34514541C7FD1BE0000F1F5 /* old-fashioned.png */,
+				A34514551C7FD1BE0000F1F5 /* rumchata.png */,
+				A34514561C7FD1BE0000F1F5 /* shirley.png */,
+				A34514591C7FD1BE0000F1F5 /* the-calling.png */,
+			);
+			path = emojis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +201,34 @@
 				A3A6E2DD1C5FF1DE000F5C68 /* Sources */,
 				A3A6E2DE1C5FF1DE000F5C68 /* Frameworks */,
 				A3A6E2DF1C5FF1DE000F5C68 /* Resources */,
+				A3A6E3051C5FF204000F5C68 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3A6E3001C5FF204000F5C68 /* PBXTargetDependency */,
+			);
+			name = "Emoji Keyboard";
+			productName = "Emoji Keyboard";
+			productReference = A3A6E2E11C5FF1DE000F5C68 /* LocaMoji.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3A6E2F91C5FF204000F5C68 /* Milwaukee Emoji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A6E3021C5FF204000F5C68 /* Build configuration list for PBXNativeTarget "Milwaukee Emoji" */;
+			buildPhases = (
+				A3A6E2F61C5FF204000F5C68 /* Sources */,
+				A3A6E2F71C5FF204000F5C68 /* Frameworks */,
+				A3A6E2F81C5FF204000F5C68 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Emoji Keyboard";
-			productName = "Emoji Keyboard";
-			productReference = A3A6E2E11C5FF1DE000F5C68 /* Emoji Keyboard.app */;
-			productType = "com.apple.product-type.application";
+			name = "Milwaukee Emoji";
+			productName = "Milwaukee Emoji";
+			productReference = A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +242,11 @@
 				TargetAttributes = {
 					A3A6E2E01C5FF1DE000F5C68 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8HR5CN5CA2;
+					};
+					A3A6E2F91C5FF204000F5C68 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8HR5CN5CA2;
 					};
 				};
 			};
@@ -113,6 +264,7 @@
 			projectRoot = "";
 			targets = (
 				A3A6E2E01C5FF1DE000F5C68 /* Emoji Keyboard */,
+				A3A6E2F91C5FF204000F5C68 /* Milwaukee Emoji */,
 			);
 		};
 /* End PBXProject section */
@@ -122,9 +274,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3A6E2EF1C5FF1DE000F5C68 /* LaunchScreen.storyboard in Resources */,
 				A3A6E2EC1C5FF1DE000F5C68 /* Assets.xcassets in Resources */,
+				A34514751C8526000000F1F5 /* LaunchScreen.xib in Resources */,
 				A3A6E2EA1C5FF1DE000F5C68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A6E2F81C5FF204000F5C68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34514431C7E72920000F1F5 /* emojiCell.xib in Resources */,
+				A3D5FB7B1C61679E00A4EEA9 /* Keyboard.xib in Resources */,
+				A345146A1C7FD1BE0000F1F5 /* shirley.png in Resources */,
+				A345145B1C7FD1BE0000F1F5 /* bar-dice.png in Resources */,
+				A34514681C7FD1BE0000F1F5 /* old-fashioned.png in Resources */,
+				A34514611C7FD1BE0000F1F5 /* dome.png in Resources */,
+				A345145E1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png in Resources */,
+				A345145C1C7FD1BE0000F1F5 /* beastie.png in Resources */,
+				A345145D1C7FD1BE0000F1F5 /* bratwurst.png in Resources */,
+				A34514651C7FD1BE0000F1F5 /* laverne.png in Resources */,
+				A34514711C84DCEA0000F1F5 /* domes.png in Resources */,
+				A34514641C7FD1BE0000F1F5 /* lake-michigan.png in Resources */,
+				A34514691C7FD1BE0000F1F5 /* rumchata.png in Resources */,
+				A34514631C7FD1BE0000F1F5 /* 0hoan-bridge.png in Resources */,
+				A34514661C7FD1BE0000F1F5 /* milverine.png in Resources */,
+				A345146D1C7FD1BE0000F1F5 /* the-calling.png in Resources */,
+				A34514671C7FD1BE0000F1F5 /* milwaukee-flag.png in Resources */,
+				A345145A1C7FD1BE0000F1F5 /* accordion.png in Resources */,
+				A34514731C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png in Resources */,
+				A34514601C7FD1BE0000F1F5 /* cheesehead-male.png in Resources */,
+				A345145F1C7FD1BE0000F1F5 /* cheesehead-female.png in Resources */,
+				A34514721C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png in Resources */,
+				A34514451C7FC09E0000F1F5 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +322,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3A6E2F61C5FF204000F5C68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34514421C7E72920000F1F5 /* emojiCell.swift in Sources */,
+				A3A6E2FD1C5FF204000F5C68 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3A6E3001C5FF204000F5C68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A6E2F91C5FF204000F5C68 /* Milwaukee Emoji */;
+			targetProxy = A3A6E2FF1C5FF204000F5C68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A3A6E2E81C5FF1DE000F5C68 /* Main.storyboard */ = {
@@ -149,14 +348,6 @@
 				A3A6E2E91C5FF1DE000F5C68 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A3A6E2ED1C5FF1DE000F5C68 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3A6E2EE1C5FF1DE000F5C68 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -249,10 +440,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Emoji Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocaMoji;
 			};
 			name = Debug;
 		};
@@ -260,10 +453,42 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ONMILWAUKEE.COM, L.L.C (8HR5CN5CA2)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Emoji Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard";
+				PRODUCT_NAME = LocaMoji;
+			};
+			name = Release;
+		};
+		A3A6E3031C5FF204000F5C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Milwaukee Emoji/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard.Milwaukee-Emoji";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A3A6E3041C5FF204000F5C68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ONMILWAUKEE.COM, L.L.C (8HR5CN5CA2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ONMILWAUKEE.COM, L.L.C (8HR5CN5CA2)";
+				INFOPLIST_FILE = "Milwaukee Emoji/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard.Milwaukee-Emoji";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -286,6 +511,16 @@
 				A3A6E2F51C5FF1DE000F5C68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A6E3021C5FF204000F5C68 /* Build configuration list for PBXNativeTarget "Milwaukee Emoji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A6E3031C5FF204000F5C68 /* Debug */,
+				A3A6E3041C5FF204000F5C68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
