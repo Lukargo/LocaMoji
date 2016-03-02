@@ -51,6 +51,21 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+        Localytics.integrate("cea1a9fb83fbf112dfc35cc-73b24038-dfe5-11e5-7ef9-0086bc74ca0f")
+        
+        Localytics.openSession()
+        
+        print("Session Opened!")
+
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        Localytics.closeSession()
+        Localytics.upload()
+        print("We be dissappearin'!!")
+    }
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         print(imagePaths.count)
         print(emojiCollectionView.frame.size)
@@ -73,6 +88,8 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let selectedCell : emojiCell = emojiCollectionView.cellForItemAtIndexPath(indexPath) as! emojiCell
         UIPasteboard.generalPasteboard().image = UIImage(contentsOfFile: imagePaths[indexPath.row] as! String)
+        
+        Localytics.tagEvent("Emoji Copied!", attributes: ["File" : imagePaths[indexPath.row].lastPathComponent as String])
         
         UIView.animateWithDuration(0.7, animations: { () -> Void in
             selectedCell.copiedView.hidden = false

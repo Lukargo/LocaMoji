@@ -67,8 +67,12 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "1"
+         BundleIdentifier = "onmilwaukee.Emoji-Keyboard"
+         RemotePath = "/Users/Luke/Library/Developer/CoreSimulator/Devices/D13E0A50-C707-437D-81BD-329D9DC8F6EC/data/Containers/Bundle/Application/F79CBFDE-B94A-46C1-ADA1-CD9A0126B472/LocaMoji.app">
+      </RemoteRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3A6E2E01C5FF1DE000F5C68"
@@ -76,7 +80,7 @@
             BlueprintName = "Emoji Keyboard"
             ReferencedContainer = "container:Emoji Keyboard.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

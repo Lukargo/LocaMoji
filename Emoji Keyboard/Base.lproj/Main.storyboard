@@ -35,14 +35,13 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEZ-cA-xGI">
                                 <rect key="frame" x="20" y="45" width="566" height="191"/>
-                                <string key="text">Go to Settings &gt; General &gt; Keyboard &gt; Keyboards &gt; Add New Keyboard and select LocaMoji from the Third-Party Keyboards.
+                                <mutableString key="text">Go to Settings &gt; General &gt; Keyboard &gt; Keyboards &gt; Add New Keyboard and select LocaMoji from the Third-Party Keyboards.
 
-From the Keyboards screen select LocaMoji and turn on “Allow full access.”  Apple requires this to use copy and paste. We won't save or transmit any of your info.
-
+From the Keyboards screen select LocaMoji and turn on “Allow full access.”  Apple requires this to use copy and past. We also use this to track emoji popularity. We won't save or transmit any other personal data. 
 When you're in your Messages app, tap the Globe at the bottom of the keyboard to switch to the LocaMoji keyboard.
-</string>
+</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
