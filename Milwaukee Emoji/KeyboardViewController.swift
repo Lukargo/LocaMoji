@@ -14,10 +14,120 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     
     let emojiList : [String] = ["test1", "test2"]
     
+    let numberStrings : [String] = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "/", ":", ";", "(", ")", "$", "&", "@", ",", ".", "#", "!", "=", "%", "?" ]
+    
+    let charStrings : [String] = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
+    
     var imagePaths : NSArray!;
     
+    var singleCharButtons : NSArray!
+    
+    let normalHeight : CGFloat = 230.0
+    let expandedHeight : CGFloat = 230.0
+    var heightContraint : NSLayoutConstraint = NSLayoutConstraint()
+    var normalHeightConstraint : NSLayoutConstraint = NSLayoutConstraint()
 //    var emojiCollectionView : UICollectionView!;
 
+    @IBOutlet var shiftButton: UIButton!
+    @IBOutlet var viewSwitcherButton: UIButton!
+    @IBOutlet var keyHolderView: UIView!
+    @IBAction func handleKeyPress(sender: UIButton) {
+        
+        if(sender.tag == 50)
+        {
+            for view in self.singleCharButtons
+            {
+
+                var button = view as! UIButton
+                var buttonText = button.titleLabel!.text
+                if(buttonText == buttonText?.lowercaseString)
+                {
+                    buttonText = buttonText?.uppercaseString
+                    button.setTitle(buttonText, forState: UIControlState.Normal)
+                    self.shiftButton.setImage(UIImage(named: "shift-132-black"), forState: UIControlState.Normal)
+                    
+                }
+                else
+                {
+                    buttonText = buttonText?.lowercaseString
+                    button.setTitle(buttonText, forState: UIControlState.Normal)
+                    self.shiftButton.setImage(UIImage(named: "shift-132-outline-black"), forState: UIControlState.Normal)
+                }
+                
+            }
+
+        }
+        else if(sender.tag == 28)
+        {
+            self.shiftButton.setImage(UIImage(named: "shift-132-outline-black"), forState: UIControlState.Normal)
+            
+            var swappingToNumbers = (self.singleCharButtons.firstObject?.titleLabel!!.text?.caseInsensitiveCompare(self.charStrings[0]) == NSComparisonResult.OrderedSame) ? true : false
+            
+            if (swappingToNumbers)
+            {
+                sender.setTitle("ABC", forState: UIControlState.Normal)
+            }
+            
+            for (index, view) in self.singleCharButtons.enumerate()
+            {
+                print(index)
+                print(self.singleCharButtons.count)
+                print(self.charStrings[0])
+                if(swappingToNumbers)
+                {
+                    view.setTitle(self.numberStrings[view.tag], forState: UIControlState.Normal)
+                }
+                else
+                {
+                    view.setTitle(self.charStrings[view.tag], forState: UIControlState.Normal)
+                }
+            }
+        }
+        else if(sender.tag == 29)
+        {
+            self.textDocumentProxy.insertText(" ")
+        }
+        else if(sender.tag == 30)
+        {
+            self.textDocumentProxy.insertText("\n")
+        }
+        else if(sender.tag == 27)
+        {
+            self.textDocumentProxy.deleteBackward()
+        }
+        else
+        {
+            self.textDocumentProxy.insertText(sender.titleLabel!.text!)
+
+        }
+        
+    }
+    @IBAction func emojiToTextViewSwap(sender: AnyObject) {
+        if(self.keyHolderView.hidden)
+        {
+            self.keyHolderView.hidden = false
+            self.viewSwitcherButton.setImage(UIImage(named: "locamoji-132-white"), forState: UIControlState.Normal)
+            self.fullAccessWarningView.hidden = true
+            Localytics.tagEvent("Someone actually used the text keyboard!")
+
+        }
+        else
+        {
+            self.keyHolderView.hidden = true
+            self.viewSwitcherButton.setImage(UIImage(named: "keyboard-132-white"), forState: UIControlState.Normal)
+            if(UIPasteboard.generalPasteboard().isKindOfClass(UIPasteboard))
+            {
+                self.fullAccessWarningView.hidden = true
+            }
+            else
+            {
+                self.fullAccessWarningView.hidden = false
+            }
+
+        }
+        
+    }
+    @IBOutlet var mainView: UIView!
     @IBOutlet var fullAccessWarningView: UIView!
     @IBOutlet var emojiCollectionView: UICollectionView!
     
@@ -49,6 +159,24 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         
         imagePaths = NSBundle.mainBundle().pathsForResourcesOfType("png", inDirectory: nil)
         
+        self.heightContraint = NSLayoutConstraint(item: self.view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 0.0, constant: expandedHeight)
+        
+        self.normalHeightConstraint = NSLayoutConstraint(item: self.view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 0.0, constant: normalHeight)
+        
+        self.singleCharButtons = self.keyHolderView.subviews.filter({ (view) -> Bool in
+            if(view.isKindOfClass(UIButton))
+            {
+                let button = view as! UIButton
+                let buttonText = button.titleLabel!.text
+                if (buttonText != nil && buttonText!.characters.count == 1)
+                {
+                    return true
+                }
+            }
+                return false
+        })
+        
+        self.keyHolderView.hidden = true
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -58,6 +186,31 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         
         print("Session Opened!")
 
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        if(UIScreen.mainScreen().bounds.size.width > UIScreen.mainScreen().bounds.size.height){
+            self.mainView.addConstraint(heightContraint)
+            
+        }
+        else
+        {
+            self.mainView.addConstraint(normalHeightConstraint)
+        }
+    }
+    
+    override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
+        if(toInterfaceOrientation == UIInterfaceOrientation.LandscapeLeft || toInterfaceOrientation == UIInterfaceOrientation.LandscapeRight)
+        {
+                    self.mainView.removeConstraint(normalHeightConstraint)
+                    self.mainView.addConstraint(heightContraint)
+        }
+        else
+        {
+                    self.mainView.removeConstraint(heightContraint)
+                    self.mainView.addConstraint(normalHeightConstraint)
+            
+        }
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -106,11 +259,11 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSizeMake(54, 51);
+        return CGSizeMake(44, 44);
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 40;
+        return 10;
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
@@ -118,7 +271,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(15, 15, 15, 15);
+        return UIEdgeInsetsMake(5, 15, 5, 15);
     }
 
     override func didReceiveMemoryWarning() {
