@@ -11,30 +11,46 @@
 		A31B59451C866A34004F3927 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3220B3C1C866467009D1CC1 /* CoreLocation.framework */; };
 		A31B59461C866A3B004F3927 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3220B3C1C866467009D1CC1 /* CoreLocation.framework */; };
 		A3220B401C86658F009D1CC1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3220B3F1C86658F009D1CC1 /* libPods.a */; };
+		A325141C1CEBA7A400D326C7 /* mam-art-patrons.png in Resources */ = {isa = PBXBuildFile; fileRef = A32514161CEBA7A400D326C7 /* mam-art-patrons.png */; };
+		A325141D1CEBA7A400D326C7 /* mam-chihuly.png in Resources */ = {isa = PBXBuildFile; fileRef = A32514171CEBA7A400D326C7 /* mam-chihuly.png */; };
+		A325141E1CEBA7A400D326C7 /* mam-closed.png in Resources */ = {isa = PBXBuildFile; fileRef = A32514181CEBA7A400D326C7 /* mam-closed.png */; };
+		A325141F1CEBA7A400D326C7 /* mam-janitor.png in Resources */ = {isa = PBXBuildFile; fileRef = A32514191CEBA7A400D326C7 /* mam-janitor.png */; };
+		A32514201CEBA7A400D326C7 /* mam-open.png in Resources */ = {isa = PBXBuildFile; fileRef = A325141A1CEBA7A400D326C7 /* mam-open.png */; };
+		A32514211CEBA7A400D326C7 /* mam-sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = A325141B1CEBA7A400D326C7 /* mam-sunny.png */; };
+		A32514231CEBA7C700D326C7 /* alice-cooper.png in Resources */ = {isa = PBXBuildFile; fileRef = A32514221CEBA7C700D326C7 /* alice-cooper.png */; };
+		A325D3481CC0BD3E00638E6A /* accordion.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D32F1CC0BD3E00638E6A /* accordion.png */; };
+		A325D34A1CC0BD3E00638E6A /* bar-dice.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3311CC0BD3E00638E6A /* bar-dice.png */; };
+		A325D34B1CC0BD3E00638E6A /* beastie.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3321CC0BD3E00638E6A /* beastie.png */; };
+		A325D34C1CC0BD3E00638E6A /* bloody-mary-with-chaser.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3331CC0BD3E00638E6A /* bloody-mary-with-chaser.png */; };
+		A325D34D1CC0BD3E00638E6A /* bratwurst.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3341CC0BD3E00638E6A /* bratwurst.png */; };
+		A325D34E1CC0BD3E00638E6A /* bronze-fonz-thumbs.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3351CC0BD3E00638E6A /* bronze-fonz-thumbs.png */; };
+		A325D34F1CC0BD3E00638E6A /* cheesehead-female.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3361CC0BD3E00638E6A /* cheesehead-female.png */; };
+		A325D3501CC0BD3E00638E6A /* cheesehead-male.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3371CC0BD3E00638E6A /* cheesehead-male.png */; };
+		A325D3511CC0BD3E00638E6A /* city-hall.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3381CC0BD3E00638E6A /* city-hall.png */; };
+		A325D3521CC0BD3E00638E6A /* dome.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3391CC0BD3E00638E6A /* dome.png */; };
+		A325D3531CC0BD3E00638E6A /* domes.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D33A1CC0BD3E00638E6A /* domes.png */; };
+		A325D3541CC0BD3E00638E6A /* fish-fry-fully-loaded.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D33B1CC0BD3E00638E6A /* fish-fry-fully-loaded.png */; };
+		A325D3551CC0BD3E00638E6A /* 0hoan-bridge.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D33C1CC0BD3E00638E6A /* 0hoan-bridge.png */; };
+		A325D3561CC0BD3E00638E6A /* lake-michigan.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D33D1CC0BD3E00638E6A /* lake-michigan.png */; };
+		A325D3571CC0BD3E00638E6A /* laverne.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D33E1CC0BD3E00638E6A /* laverne.png */; };
+		A325D3581CC0BD3E00638E6A /* milverine.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D33F1CC0BD3E00638E6A /* milverine.png */; };
+		A325D3591CC0BD3E00638E6A /* milwaukee-flag.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3401CC0BD3E00638E6A /* milwaukee-flag.png */; };
+		A325D35A1CC0BD3E00638E6A /* old-fashioned.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3411CC0BD3E00638E6A /* old-fashioned.png */; };
+		A325D35B1CC0BD3E00638E6A /* rumchata.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3421CC0BD3E00638E6A /* rumchata.png */; };
+		A325D35C1CC0BD3E00638E6A /* shirley.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3431CC0BD3E00638E6A /* shirley.png */; };
+		A325D35D1CC0BD3E00638E6A /* shorts-with-melting-snow-female.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3441CC0BD3E00638E6A /* shorts-with-melting-snow-female.png */; };
+		A325D35E1CC0BD3E00638E6A /* shorts-with-melting-snow-male.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3451CC0BD3E00638E6A /* shorts-with-melting-snow-male.png */; };
+		A325D35F1CC0BD3E00638E6A /* the-calling.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3461CC0BD3E00638E6A /* the-calling.png */; };
+		A325D3601CC0BD3E00638E6A /* vel-phillips.png in Resources */ = {isa = PBXBuildFile; fileRef = A325D3471CC0BD3E00638E6A /* vel-phillips.png */; };
 		A34514421C7E72920000F1F5 /* emojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34514401C7E72920000F1F5 /* emojiCell.swift */; };
 		A34514431C7E72920000F1F5 /* emojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A34514411C7E72920000F1F5 /* emojiCell.xib */; };
 		A34514451C7FC09E0000F1F5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34514441C7FC09E0000F1F5 /* Media.xcassets */; };
-		A345145A1C7FD1BE0000F1F5 /* accordion.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514461C7FD1BE0000F1F5 /* accordion.png */; };
-		A345145B1C7FD1BE0000F1F5 /* bar-dice.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514471C7FD1BE0000F1F5 /* bar-dice.png */; };
-		A345145C1C7FD1BE0000F1F5 /* beastie.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514481C7FD1BE0000F1F5 /* beastie.png */; };
-		A345145D1C7FD1BE0000F1F5 /* bratwurst.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514491C7FD1BE0000F1F5 /* bratwurst.png */; };
-		A345145E1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144A1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png */; };
-		A345145F1C7FD1BE0000F1F5 /* cheesehead-female.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144B1C7FD1BE0000F1F5 /* cheesehead-female.png */; };
-		A34514601C7FD1BE0000F1F5 /* cheesehead-male.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144C1C7FD1BE0000F1F5 /* cheesehead-male.png */; };
-		A34514611C7FD1BE0000F1F5 /* dome.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144D1C7FD1BE0000F1F5 /* dome.png */; };
-		A34514631C7FD1BE0000F1F5 /* 0hoan-bridge.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144F1C7FD1BE0000F1F5 /* 0hoan-bridge.png */; };
-		A34514641C7FD1BE0000F1F5 /* lake-michigan.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514501C7FD1BE0000F1F5 /* lake-michigan.png */; };
-		A34514651C7FD1BE0000F1F5 /* laverne.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514511C7FD1BE0000F1F5 /* laverne.png */; };
-		A34514661C7FD1BE0000F1F5 /* milverine.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514521C7FD1BE0000F1F5 /* milverine.png */; };
-		A34514671C7FD1BE0000F1F5 /* milwaukee-flag.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514531C7FD1BE0000F1F5 /* milwaukee-flag.png */; };
-		A34514681C7FD1BE0000F1F5 /* old-fashioned.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514541C7FD1BE0000F1F5 /* old-fashioned.png */; };
-		A34514691C7FD1BE0000F1F5 /* rumchata.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514551C7FD1BE0000F1F5 /* rumchata.png */; };
-		A345146A1C7FD1BE0000F1F5 /* shirley.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514561C7FD1BE0000F1F5 /* shirley.png */; };
-		A345146D1C7FD1BE0000F1F5 /* the-calling.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514591C7FD1BE0000F1F5 /* the-calling.png */; };
-		A34514711C84DCEA0000F1F5 /* domes.png in Resources */ = {isa = PBXBuildFile; fileRef = A345146E1C84DCEA0000F1F5 /* domes.png */; };
-		A34514721C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png in Resources */ = {isa = PBXBuildFile; fileRef = A345146F1C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png */; };
-		A34514731C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514701C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png */; };
 		A34514751C8526000000F1F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A34514741C8526000000F1F5 /* LaunchScreen.xib */; };
+		A39553D91CD7FB0F0011B7A8 /* hot-ham-and-rolls.png in Resources */ = {isa = PBXBuildFile; fileRef = A39553D41CD7FB0F0011B7A8 /* hot-ham-and-rolls.png */; };
+		A39553DA1CD7FB0F0011B7A8 /* james-lovell.png in Resources */ = {isa = PBXBuildFile; fileRef = A39553D51CD7FB0F0011B7A8 /* james-lovell.png */; };
+		A39553DB1CD7FB0F0011B7A8 /* red-lighthouse.png in Resources */ = {isa = PBXBuildFile; fileRef = A39553D61CD7FB0F0011B7A8 /* red-lighthouse.png */; };
+		A39553DC1CD7FB0F0011B7A8 /* shot-and-beer.png in Resources */ = {isa = PBXBuildFile; fileRef = A39553D71CD7FB0F0011B7A8 /* shot-and-beer.png */; };
+		A39553DD1CD7FB0F0011B7A8 /* swing-park.png in Resources */ = {isa = PBXBuildFile; fileRef = A39553D81CD7FB0F0011B7A8 /* swing-park.png */; };
 		A3A6E2E51C5FF1DE000F5C68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6E2E41C5FF1DE000F5C68 /* AppDelegate.swift */; };
 		A3A6E2E71C5FF1DE000F5C68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6E2E61C5FF1DE000F5C68 /* ViewController.swift */; };
 		A3A6E2EA1C5FF1DE000F5C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A6E2E81C5FF1DE000F5C68 /* Main.storyboard */; };
@@ -74,30 +90,46 @@
 		A3220B3B1C865AD6009D1CC1 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		A3220B3C1C866467009D1CC1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A3220B3F1C86658F009D1CC1 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		A32514161CEBA7A400D326C7 /* mam-art-patrons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mam-art-patrons.png"; sourceTree = "<group>"; };
+		A32514171CEBA7A400D326C7 /* mam-chihuly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mam-chihuly.png"; sourceTree = "<group>"; };
+		A32514181CEBA7A400D326C7 /* mam-closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mam-closed.png"; sourceTree = "<group>"; };
+		A32514191CEBA7A400D326C7 /* mam-janitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mam-janitor.png"; sourceTree = "<group>"; };
+		A325141A1CEBA7A400D326C7 /* mam-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mam-open.png"; sourceTree = "<group>"; };
+		A325141B1CEBA7A400D326C7 /* mam-sunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mam-sunny.png"; sourceTree = "<group>"; };
+		A32514221CEBA7C700D326C7 /* alice-cooper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alice-cooper.png"; sourceTree = "<group>"; };
+		A325D32F1CC0BD3E00638E6A /* accordion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accordion.png; sourceTree = "<group>"; };
+		A325D3311CC0BD3E00638E6A /* bar-dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-dice.png"; sourceTree = "<group>"; };
+		A325D3321CC0BD3E00638E6A /* beastie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beastie.png; sourceTree = "<group>"; };
+		A325D3331CC0BD3E00638E6A /* bloody-mary-with-chaser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bloody-mary-with-chaser.png"; sourceTree = "<group>"; };
+		A325D3341CC0BD3E00638E6A /* bratwurst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bratwurst.png; sourceTree = "<group>"; };
+		A325D3351CC0BD3E00638E6A /* bronze-fonz-thumbs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bronze-fonz-thumbs.png"; sourceTree = "<group>"; };
+		A325D3361CC0BD3E00638E6A /* cheesehead-female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheesehead-female.png"; sourceTree = "<group>"; };
+		A325D3371CC0BD3E00638E6A /* cheesehead-male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheesehead-male.png"; sourceTree = "<group>"; };
+		A325D3381CC0BD3E00638E6A /* city-hall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "city-hall.png"; sourceTree = "<group>"; };
+		A325D3391CC0BD3E00638E6A /* dome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dome.png; sourceTree = "<group>"; };
+		A325D33A1CC0BD3E00638E6A /* domes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = domes.png; sourceTree = "<group>"; };
+		A325D33B1CC0BD3E00638E6A /* fish-fry-fully-loaded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fish-fry-fully-loaded.png"; sourceTree = "<group>"; };
+		A325D33C1CC0BD3E00638E6A /* 0hoan-bridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0hoan-bridge.png"; sourceTree = "<group>"; };
+		A325D33D1CC0BD3E00638E6A /* lake-michigan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lake-michigan.png"; sourceTree = "<group>"; };
+		A325D33E1CC0BD3E00638E6A /* laverne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laverne.png; sourceTree = "<group>"; };
+		A325D33F1CC0BD3E00638E6A /* milverine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = milverine.png; sourceTree = "<group>"; };
+		A325D3401CC0BD3E00638E6A /* milwaukee-flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "milwaukee-flag.png"; sourceTree = "<group>"; };
+		A325D3411CC0BD3E00638E6A /* old-fashioned.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "old-fashioned.png"; sourceTree = "<group>"; };
+		A325D3421CC0BD3E00638E6A /* rumchata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rumchata.png; sourceTree = "<group>"; };
+		A325D3431CC0BD3E00638E6A /* shirley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirley.png; sourceTree = "<group>"; };
+		A325D3441CC0BD3E00638E6A /* shorts-with-melting-snow-female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shorts-with-melting-snow-female.png"; sourceTree = "<group>"; };
+		A325D3451CC0BD3E00638E6A /* shorts-with-melting-snow-male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shorts-with-melting-snow-male.png"; sourceTree = "<group>"; };
+		A325D3461CC0BD3E00638E6A /* the-calling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "the-calling.png"; sourceTree = "<group>"; };
+		A325D3471CC0BD3E00638E6A /* vel-phillips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vel-phillips.png"; sourceTree = "<group>"; };
 		A34514401C7E72920000F1F5 /* emojiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = emojiCell.swift; sourceTree = "<group>"; };
 		A34514411C7E72920000F1F5 /* emojiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = emojiCell.xib; sourceTree = "<group>"; };
 		A34514441C7FC09E0000F1F5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		A34514461C7FD1BE0000F1F5 /* accordion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accordion.png; sourceTree = "<group>"; };
-		A34514471C7FD1BE0000F1F5 /* bar-dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-dice.png"; sourceTree = "<group>"; };
-		A34514481C7FD1BE0000F1F5 /* beastie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beastie.png; sourceTree = "<group>"; };
-		A34514491C7FD1BE0000F1F5 /* bratwurst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bratwurst.png; sourceTree = "<group>"; };
-		A345144A1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bronze-fonz-thumbs.png"; sourceTree = "<group>"; };
-		A345144B1C7FD1BE0000F1F5 /* cheesehead-female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheesehead-female.png"; sourceTree = "<group>"; };
-		A345144C1C7FD1BE0000F1F5 /* cheesehead-male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheesehead-male.png"; sourceTree = "<group>"; };
-		A345144D1C7FD1BE0000F1F5 /* dome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dome.png; sourceTree = "<group>"; };
-		A345144F1C7FD1BE0000F1F5 /* 0hoan-bridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0hoan-bridge.png"; sourceTree = "<group>"; };
-		A34514501C7FD1BE0000F1F5 /* lake-michigan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lake-michigan.png"; sourceTree = "<group>"; };
-		A34514511C7FD1BE0000F1F5 /* laverne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laverne.png; sourceTree = "<group>"; };
-		A34514521C7FD1BE0000F1F5 /* milverine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = milverine.png; sourceTree = "<group>"; };
-		A34514531C7FD1BE0000F1F5 /* milwaukee-flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "milwaukee-flag.png"; sourceTree = "<group>"; };
-		A34514541C7FD1BE0000F1F5 /* old-fashioned.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "old-fashioned.png"; sourceTree = "<group>"; };
-		A34514551C7FD1BE0000F1F5 /* rumchata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rumchata.png; sourceTree = "<group>"; };
-		A34514561C7FD1BE0000F1F5 /* shirley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirley.png; sourceTree = "<group>"; };
-		A34514591C7FD1BE0000F1F5 /* the-calling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "the-calling.png"; sourceTree = "<group>"; };
-		A345146E1C84DCEA0000F1F5 /* domes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = domes.png; sourceTree = "<group>"; };
-		A345146F1C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shorts-with-melting-snow-female.png"; sourceTree = "<group>"; };
-		A34514701C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shorts-with-melting-snow-male.png"; sourceTree = "<group>"; };
 		A34514741C8526000000F1F5 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		A39553D41CD7FB0F0011B7A8 /* hot-ham-and-rolls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hot-ham-and-rolls.png"; sourceTree = "<group>"; };
+		A39553D51CD7FB0F0011B7A8 /* james-lovell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "james-lovell.png"; sourceTree = "<group>"; };
+		A39553D61CD7FB0F0011B7A8 /* red-lighthouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-lighthouse.png"; sourceTree = "<group>"; };
+		A39553D71CD7FB0F0011B7A8 /* shot-and-beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot-and-beer.png"; sourceTree = "<group>"; };
+		A39553D81CD7FB0F0011B7A8 /* swing-park.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swing-park.png"; sourceTree = "<group>"; };
 		A3A6E2E11C5FF1DE000F5C68 /* LocaMoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocaMoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A6E2E41C5FF1DE000F5C68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3A6E2E61C5FF1DE000F5C68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -203,26 +235,42 @@
 		A3D5FBD91C62B9A000A4EEA9 /* emojis */ = {
 			isa = PBXGroup;
 			children = (
-				A345146E1C84DCEA0000F1F5 /* domes.png */,
-				A345146F1C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png */,
-				A34514701C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png */,
-				A34514461C7FD1BE0000F1F5 /* accordion.png */,
-				A34514471C7FD1BE0000F1F5 /* bar-dice.png */,
-				A34514481C7FD1BE0000F1F5 /* beastie.png */,
-				A34514491C7FD1BE0000F1F5 /* bratwurst.png */,
-				A345144A1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png */,
-				A345144B1C7FD1BE0000F1F5 /* cheesehead-female.png */,
-				A345144C1C7FD1BE0000F1F5 /* cheesehead-male.png */,
-				A345144D1C7FD1BE0000F1F5 /* dome.png */,
-				A345144F1C7FD1BE0000F1F5 /* 0hoan-bridge.png */,
-				A34514501C7FD1BE0000F1F5 /* lake-michigan.png */,
-				A34514511C7FD1BE0000F1F5 /* laverne.png */,
-				A34514521C7FD1BE0000F1F5 /* milverine.png */,
-				A34514531C7FD1BE0000F1F5 /* milwaukee-flag.png */,
-				A34514541C7FD1BE0000F1F5 /* old-fashioned.png */,
-				A34514551C7FD1BE0000F1F5 /* rumchata.png */,
-				A34514561C7FD1BE0000F1F5 /* shirley.png */,
-				A34514591C7FD1BE0000F1F5 /* the-calling.png */,
+				A32514161CEBA7A400D326C7 /* mam-art-patrons.png */,
+				A32514171CEBA7A400D326C7 /* mam-chihuly.png */,
+				A32514221CEBA7C700D326C7 /* alice-cooper.png */,
+				A32514181CEBA7A400D326C7 /* mam-closed.png */,
+				A32514191CEBA7A400D326C7 /* mam-janitor.png */,
+				A325141A1CEBA7A400D326C7 /* mam-open.png */,
+				A325141B1CEBA7A400D326C7 /* mam-sunny.png */,
+				A39553D41CD7FB0F0011B7A8 /* hot-ham-and-rolls.png */,
+				A39553D51CD7FB0F0011B7A8 /* james-lovell.png */,
+				A39553D61CD7FB0F0011B7A8 /* red-lighthouse.png */,
+				A39553D71CD7FB0F0011B7A8 /* shot-and-beer.png */,
+				A39553D81CD7FB0F0011B7A8 /* swing-park.png */,
+				A325D32F1CC0BD3E00638E6A /* accordion.png */,
+				A325D3311CC0BD3E00638E6A /* bar-dice.png */,
+				A325D3321CC0BD3E00638E6A /* beastie.png */,
+				A325D3331CC0BD3E00638E6A /* bloody-mary-with-chaser.png */,
+				A325D3341CC0BD3E00638E6A /* bratwurst.png */,
+				A325D3351CC0BD3E00638E6A /* bronze-fonz-thumbs.png */,
+				A325D3361CC0BD3E00638E6A /* cheesehead-female.png */,
+				A325D3371CC0BD3E00638E6A /* cheesehead-male.png */,
+				A325D3381CC0BD3E00638E6A /* city-hall.png */,
+				A325D3391CC0BD3E00638E6A /* dome.png */,
+				A325D33A1CC0BD3E00638E6A /* domes.png */,
+				A325D33B1CC0BD3E00638E6A /* fish-fry-fully-loaded.png */,
+				A325D33C1CC0BD3E00638E6A /* 0hoan-bridge.png */,
+				A325D33D1CC0BD3E00638E6A /* lake-michigan.png */,
+				A325D33E1CC0BD3E00638E6A /* laverne.png */,
+				A325D33F1CC0BD3E00638E6A /* milverine.png */,
+				A325D3401CC0BD3E00638E6A /* milwaukee-flag.png */,
+				A325D3411CC0BD3E00638E6A /* old-fashioned.png */,
+				A325D3421CC0BD3E00638E6A /* rumchata.png */,
+				A325D3431CC0BD3E00638E6A /* shirley.png */,
+				A325D3441CC0BD3E00638E6A /* shorts-with-melting-snow-female.png */,
+				A325D3451CC0BD3E00638E6A /* shorts-with-melting-snow-male.png */,
+				A325D3461CC0BD3E00638E6A /* the-calling.png */,
+				A325D3471CC0BD3E00638E6A /* vel-phillips.png */,
 			);
 			path = emojis;
 			sourceTree = "<group>";
@@ -323,29 +371,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A325D3591CC0BD3E00638E6A /* milwaukee-flag.png in Resources */,
 				A34514431C7E72920000F1F5 /* emojiCell.xib in Resources */,
+				A325D34F1CC0BD3E00638E6A /* cheesehead-female.png in Resources */,
+				A325D34C1CC0BD3E00638E6A /* bloody-mary-with-chaser.png in Resources */,
+				A325D3541CC0BD3E00638E6A /* fish-fry-fully-loaded.png in Resources */,
 				A3D5FB7B1C61679E00A4EEA9 /* Keyboard.xib in Resources */,
-				A345146A1C7FD1BE0000F1F5 /* shirley.png in Resources */,
-				A345145B1C7FD1BE0000F1F5 /* bar-dice.png in Resources */,
-				A34514681C7FD1BE0000F1F5 /* old-fashioned.png in Resources */,
-				A34514611C7FD1BE0000F1F5 /* dome.png in Resources */,
-				A345145E1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png in Resources */,
-				A345145C1C7FD1BE0000F1F5 /* beastie.png in Resources */,
-				A345145D1C7FD1BE0000F1F5 /* bratwurst.png in Resources */,
-				A34514651C7FD1BE0000F1F5 /* laverne.png in Resources */,
-				A34514711C84DCEA0000F1F5 /* domes.png in Resources */,
-				A34514641C7FD1BE0000F1F5 /* lake-michigan.png in Resources */,
-				A34514691C7FD1BE0000F1F5 /* rumchata.png in Resources */,
-				A34514631C7FD1BE0000F1F5 /* 0hoan-bridge.png in Resources */,
-				A34514661C7FD1BE0000F1F5 /* milverine.png in Resources */,
-				A345146D1C7FD1BE0000F1F5 /* the-calling.png in Resources */,
-				A34514671C7FD1BE0000F1F5 /* milwaukee-flag.png in Resources */,
-				A345145A1C7FD1BE0000F1F5 /* accordion.png in Resources */,
-				A34514731C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png in Resources */,
-				A34514601C7FD1BE0000F1F5 /* cheesehead-male.png in Resources */,
-				A345145F1C7FD1BE0000F1F5 /* cheesehead-female.png in Resources */,
-				A34514721C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png in Resources */,
+				A325D3521CC0BD3E00638E6A /* dome.png in Resources */,
+				A325D3501CC0BD3E00638E6A /* cheesehead-male.png in Resources */,
+				A325D3531CC0BD3E00638E6A /* domes.png in Resources */,
+				A325D3481CC0BD3E00638E6A /* accordion.png in Resources */,
+				A325D34A1CC0BD3E00638E6A /* bar-dice.png in Resources */,
+				A325D3601CC0BD3E00638E6A /* vel-phillips.png in Resources */,
+				A39553DC1CD7FB0F0011B7A8 /* shot-and-beer.png in Resources */,
+				A325D3581CC0BD3E00638E6A /* milverine.png in Resources */,
+				A325D35B1CC0BD3E00638E6A /* rumchata.png in Resources */,
+				A325D3551CC0BD3E00638E6A /* 0hoan-bridge.png in Resources */,
+				A325D3511CC0BD3E00638E6A /* city-hall.png in Resources */,
 				A34514451C7FC09E0000F1F5 /* Media.xcassets in Resources */,
+				A325D35D1CC0BD3E00638E6A /* shorts-with-melting-snow-female.png in Resources */,
+				A325D34E1CC0BD3E00638E6A /* bronze-fonz-thumbs.png in Resources */,
+				A325141F1CEBA7A400D326C7 /* mam-janitor.png in Resources */,
+				A325141C1CEBA7A400D326C7 /* mam-art-patrons.png in Resources */,
+				A39553DA1CD7FB0F0011B7A8 /* james-lovell.png in Resources */,
+				A325D34B1CC0BD3E00638E6A /* beastie.png in Resources */,
+				A325D3571CC0BD3E00638E6A /* laverne.png in Resources */,
+				A325D3561CC0BD3E00638E6A /* lake-michigan.png in Resources */,
+				A325D34D1CC0BD3E00638E6A /* bratwurst.png in Resources */,
+				A325141D1CEBA7A400D326C7 /* mam-chihuly.png in Resources */,
+				A39553DB1CD7FB0F0011B7A8 /* red-lighthouse.png in Resources */,
+				A39553DD1CD7FB0F0011B7A8 /* swing-park.png in Resources */,
+				A325D35E1CC0BD3E00638E6A /* shorts-with-melting-snow-male.png in Resources */,
+				A325D35C1CC0BD3E00638E6A /* shirley.png in Resources */,
+				A39553D91CD7FB0F0011B7A8 /* hot-ham-and-rolls.png in Resources */,
+				A32514211CEBA7A400D326C7 /* mam-sunny.png in Resources */,
+				A325D35F1CC0BD3E00638E6A /* the-calling.png in Resources */,
+				A325D35A1CC0BD3E00638E6A /* old-fashioned.png in Resources */,
+				A325141E1CEBA7A400D326C7 /* mam-closed.png in Resources */,
+				A32514201CEBA7A400D326C7 /* mam-open.png in Resources */,
+				A32514231CEBA7C700D326C7 /* alice-cooper.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

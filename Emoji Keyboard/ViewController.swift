@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet var textView: UITextView!
     
-    let imageNames : [String] = ["Accordian", "Bar Dice", "Beastie", "Bratwurst", "Bronze Fonz’s Thumbs", "Cheesehead (Female)", "Cheesehead (Male)", "One Mitchell Park Dome", "The Mitchell Park Domes", "Hoan Bridge", "Lake Michigan", "Laverne", "The Milverine", "The Milwaukee Flag", "Old Fashioned", "Rumchata", "Shirley", "Mark di Suervo’s “The Calling”", "Shorts & Melting Snow (Female)", "Shorts & Melting Snow (Male)"]
+    let imageNames : [String] = ["Accordian", "Alice Cooper", "Bar Dice", "Beastie", "Bloody Marry with Chaser", "Bratwurst", "Bronze Fonz’s Thumbs", "Cheesehead (Female)", "Cheesehead (Male)", "City Hall", "Fish Fry", "One Mitchell Park Dome", "The Mitchell Park Domes", "Hoan Bridge", "Lake Michigan", "Laverne", "The Milverine", "The Milwaukee Flag", "Old Fashioned", "Rumchata", "Shirley", "Mark di Suervo’s “The Calling”", "Shorts & Melting Snow (Female)", "Shorts & Melting Snow (Male)", "Vel Phillips", "Hot Ham and Rolls", "James Lovell", "Red Lighthouse", "A Shot and a Beer", "Swing Park", "Burke Brise Soleil - Closed", "Burke Brise Soleil - Open", "Duane Hanson's \"Janitor\"", "Dale Chihuly's \"Isola di San Giacomo in Palude Chandelier II\"", "Alex Katz's \"Sunny #4\"", "Art Patrons"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
