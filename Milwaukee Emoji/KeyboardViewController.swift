@@ -18,7 +18,11 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     
     let charStrings : [String] = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
     
-    var imagePaths : NSArray!;
+    let summerPack : Set<String> = ["Beach Volleyball Female", "Beach Volleyball Male", "Beer Garden", "Beer In Glass Stein", "Beer In Plastic Cup Stacked", "Beer In Plastic Cup", "Bob Uecker", "Cheese Curds Fried", "Cream Puff", "Custard Cone", "Miller Park Closed", "Miller Park Open", "Tailgating", "Underwear Ride Female", "Underwear Ride Male"]
+    
+    let summerPackArray : [String] = ["Beach Volleyball Female", "Beach Volleyball Male", "Beer Garden", "Beer In Glass Stein", "Beer In Plastic Cup Stacked", "Beer In Plastic Cup", "Bob Uecker", "Cheese Curds Fried", "Cream Puff", "Custard Cone", "Miller Park Closed", "Miller Park Open", "Tailgating", "Underwear Ride Female", "Underwear Ride Male"]
+    
+    var imagePaths : NSMutableArray!;
     
     var singleCharButtons : NSArray!
     
@@ -148,16 +152,17 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         
         if(UIPasteboard.generalPasteboard().isKindOfClass(UIPasteboard))
         {
+            NSUserDefaults.init(suiteName: "group.com.onmilwaukee.locamoji")?.setBool(true, forKey: "theyEnabledFullAccess")
             self.fullAccessWarningView.hidden = true
         }
         
         emojiCollectionView.registerNib(UINib.init(nibName: "emojiCell", bundle: nil), forCellWithReuseIdentifier: "theOne")
         
-        self.nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside)
+        self.nextKeyboardButton.addTarget(self, action: #selector(UIInputViewController.advanceToNextInputMode), forControlEvents: .TouchUpInside)
         
-        self.deleteButton.addTarget(self.textDocumentProxy, action: "deleteBackward", forControlEvents: .TouchUpInside)
+        self.deleteButton.addTarget(self.textDocumentProxy, action: #selector(UIKeyInput.deleteBackward), forControlEvents: .TouchUpInside)
         
-        imagePaths = NSBundle.mainBundle().pathsForResourcesOfType("png", inDirectory: nil)
+        imagePaths = NSMutableArray(array: NSBundle.mainBundle().pathsForResourcesOfType("png", inDirectory: nil))
         
         self.heightContraint = NSLayoutConstraint(item: self.view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 0.0, constant: expandedHeight)
         
@@ -223,13 +228,21 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         print(imagePaths.count)
         print(emojiCollectionView.frame.size)
         print(UIScreen.mainScreen().bounds)
-        return imagePaths.count
+        return imagePaths.count + summerPack.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell : emojiCell =  emojiCollectionView.dequeueReusableCellWithReuseIdentifier("theOne", forIndexPath: indexPath) as! emojiCell
         cell.emojiIMage.contentMode = UIViewContentMode.ScaleAspectFit;
-        cell.emojiIMage.image = UIImage(contentsOfFile: imagePaths[indexPath.row] as! String)
+        if(indexPath.row < imagePaths.count)
+        {
+            cell.emojiIMage.image = UIImage(contentsOfFile: imagePaths[indexPath.row] as! String)
+        }
+        else
+        {
+            cell.emojiIMage.image = UIImage(named: summerPackArray[indexPath.row - imagePaths.count])
+        }
+        
         cell.copiedView.layer.cornerRadius = 8
         cell.copiedView.layer.masksToBounds = true
         print(indexPath)

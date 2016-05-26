@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,15 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rfj-6Z-hfs">
-                                <rect key="frame" x="20" y="257" width="566" height="323"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" red="0.027450980390000001" green="0.72156862749999995" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cL7-jw-qFl"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wbW-MG-jBJ"/>
-                                </connections>
-                            </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="milwaukee" translatesAutoresizingMaskIntoConstraints="NO" id="XvK-th-ElC">
                                 <rect key="frame" x="150" y="23" width="300" height="35"/>
                                 <constraints>
@@ -44,24 +35,47 @@ When you're in your Messages app, tap the Globe at the bottom of the keyboard to
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U1D-RX-YDk">
+                                <rect key="frame" x="20" y="217" width="566" height="363"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g9B-Bj-JZH">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="zZJ-4v-Snn"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="T0F-R5-tpE"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HEZ-cA-xGI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="3" id="AWf-Aa-RYz"/>
+                            <constraint firstItem="U1D-RX-YDk" firstAttribute="top" secondItem="XvK-th-ElC" secondAttribute="bottom" constant="159" id="Bep-jf-cly"/>
+                            <constraint firstItem="U1D-RX-YDk" firstAttribute="top" secondItem="HEZ-cA-xGI" secondAttribute="bottom" constant="-19" id="ETV-eR-aSs"/>
                             <constraint firstItem="HEZ-cA-xGI" firstAttribute="top" secondItem="XvK-th-ElC" secondAttribute="bottom" constant="10" id="G4U-El-mk3"/>
+                            <constraint firstItem="U1D-RX-YDk" firstAttribute="top" secondItem="HEZ-cA-xGI" secondAttribute="bottom" constant="-19" id="Kx5-do-lol"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U1D-RX-YDk" secondAttribute="trailing" constant="-6" id="QQ2-Dp-u1G"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HEZ-cA-xGI" secondAttribute="trailing" constant="-6" id="U6y-iy-hSa"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="U1D-RX-YDk" secondAttribute="leading" id="Wa8-AX-IfV"/>
                             <constraint firstItem="XvK-th-ElC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="3" id="bn0-sH-n9D"/>
-                            <constraint firstItem="rfj-6Z-hfs" firstAttribute="top" secondItem="HEZ-cA-xGI" secondAttribute="bottom" id="c8p-9i-dN4"/>
                             <constraint firstItem="XvK-th-ElC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="3" id="c9M-Ud-k98"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rfj-6Z-hfs" secondAttribute="trailing" constant="-6" id="dUZ-yw-Rsr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U1D-RX-YDk" secondAttribute="bottom" constant="20" id="cbS-DT-nTD"/>
                             <constraint firstItem="HEZ-cA-xGI" firstAttribute="top" secondItem="XvK-th-ElC" secondAttribute="bottom" constant="-13" id="fAu-MJ-Kdu"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rfj-6Z-hfs" secondAttribute="bottom" constant="20" id="fEt-E8-yan"/>
+                            <constraint firstItem="U1D-RX-YDk" firstAttribute="top" secondItem="HEZ-cA-xGI" secondAttribute="bottom" constant="-19" id="gCd-9t-8pi"/>
                             <constraint firstItem="HEZ-cA-xGI" firstAttribute="top" secondItem="XvK-th-ElC" secondAttribute="bottom" constant="10" id="jxn-ia-338"/>
                             <constraint firstItem="HEZ-cA-xGI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lT7-SZ-hjU"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="rfj-6Z-hfs" secondAttribute="leading" id="nWF-0P-3cu"/>
                             <constraint firstItem="XvK-th-ElC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vKA-LS-BsZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionToLogoConstraint" destination="Bep-jf-cly" id="OVU-Pp-kVD"/>
+                        <outlet property="emojiCollectionView" destination="U1D-RX-YDk" id="OoT-Uo-w7d"/>
+                        <outlet property="instructionsLabel" destination="HEZ-cA-xGI" id="YHi-dF-lo4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

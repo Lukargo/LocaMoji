@@ -57,6 +57,11 @@
 		A3A6E2EC1C5FF1DE000F5C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A6E2EB1C5FF1DE000F5C68 /* Assets.xcassets */; };
 		A3A6E2FD1C5FF204000F5C68 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6E2FC1C5FF204000F5C68 /* KeyboardViewController.swift */; };
 		A3A6E3011C5FF204000F5C68 /* Milwaukee Emoji.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A3C7C1E71CF641BD00E19E09 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C7C1E61CF641BD00E19E09 /* StoreKit.framework */; };
+		A3C7C1E91CF651C400E19E09 /* emojiCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3C7C1E81CF651C400E19E09 /* emojiCollectionCell.xib */; };
+		A3C7C1EB1CF6533400E19E09 /* emojiCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C7C1EA1CF6533400E19E09 /* emojiCollectionCell.swift */; };
+		A3C7C1ED1CF6D3F800E19E09 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C7C1EC1CF6D3F800E19E09 /* IAPHelper.swift */; };
+		A3C7C1EF1CF6D43A00E19E09 /* RageProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C7C1EE1CF6D43A00E19E09 /* RageProducts.swift */; };
 		A3D5FB7B1C61679E00A4EEA9 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D5FB7A1C61679E00A4EEA9 /* Keyboard.xib */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +144,13 @@
 		A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Milwaukee Emoji.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A6E2FC1C5FF204000F5C68 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		A3A6E2FE1C5FF204000F5C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3C7C1E61CF641BD00E19E09 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A3C7C1E81CF651C400E19E09 /* emojiCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = emojiCollectionCell.xib; sourceTree = "<group>"; };
+		A3C7C1EA1CF6533400E19E09 /* emojiCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = emojiCollectionCell.swift; sourceTree = "<group>"; };
+		A3C7C1EC1CF6D3F800E19E09 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		A3C7C1EE1CF6D43A00E19E09 /* RageProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RageProducts.swift; sourceTree = "<group>"; };
+		A3C7C1F01CF75FFE00E19E09 /* LocaMoji.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LocaMoji.entitlements; sourceTree = "<group>"; };
+		A3C7C1F11CF7619C00E19E09 /* Milwaukee Emoji.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Milwaukee Emoji.entitlements"; sourceTree = "<group>"; };
 		A3D5FB7A1C61679E00A4EEA9 /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
 		CD6F6EA941748D7B789076FC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C7C1E71CF641BD00E19E09 /* StoreKit.framework in Frameworks */,
 				A31B59461C866A3B004F3927 /* CoreLocation.framework in Frameworks */,
 				42EC39CC7DA25EFFBE55644E /* libPods.a in Frameworks */,
 			);
@@ -177,6 +190,7 @@
 		8B238387E7F9E1B8A3EE44D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3C7C1E61CF641BD00E19E09 /* StoreKit.framework */,
 				A3220B3F1C86658F009D1CC1 /* libPods.a */,
 				A3220B3C1C866467009D1CC1 /* CoreLocation.framework */,
 				86A69C54BFEC95D342C8D1BD /* libPods.a */,
@@ -207,12 +221,17 @@
 		A3A6E2E31C5FF1DE000F5C68 /* Emoji Keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				A3C7C1F01CF75FFE00E19E09 /* LocaMoji.entitlements */,
 				A3A6E2E41C5FF1DE000F5C68 /* AppDelegate.swift */,
 				A3A6E2E61C5FF1DE000F5C68 /* ViewController.swift */,
 				A3A6E2E81C5FF1DE000F5C68 /* Main.storyboard */,
 				A3A6E2EB1C5FF1DE000F5C68 /* Assets.xcassets */,
 				A3A6E2F01C5FF1DE000F5C68 /* Info.plist */,
 				A34514741C8526000000F1F5 /* LaunchScreen.xib */,
+				A3C7C1E81CF651C400E19E09 /* emojiCollectionCell.xib */,
+				A3C7C1EA1CF6533400E19E09 /* emojiCollectionCell.swift */,
+				A3C7C1EC1CF6D3F800E19E09 /* IAPHelper.swift */,
+				A3C7C1EE1CF6D43A00E19E09 /* RageProducts.swift */,
 			);
 			path = "Emoji Keyboard";
 			sourceTree = "<group>";
@@ -220,6 +239,7 @@
 		A3A6E2FB1C5FF204000F5C68 /* Milwaukee Emoji */ = {
 			isa = PBXGroup;
 			children = (
+				A3C7C1F11CF7619C00E19E09 /* Milwaukee Emoji.entitlements */,
 				A3D5FBD91C62B9A000A4EEA9 /* emojis */,
 				A3A6E2FC1C5FF204000F5C68 /* KeyboardViewController.swift */,
 				A3A6E2FE1C5FF204000F5C68 /* Info.plist */,
@@ -330,10 +350,23 @@
 					A3A6E2E01C5FF1DE000F5C68 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8HR5CN5CA2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					A3A6E2F91C5FF204000F5C68 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8HR5CN5CA2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -361,6 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C7C1E91CF651C400E19E09 /* emojiCollectionCell.xib in Resources */,
 				A3A6E2EC1C5FF1DE000F5C68 /* Assets.xcassets in Resources */,
 				A34514751C8526000000F1F5 /* LaunchScreen.xib in Resources */,
 				A3A6E2EA1C5FF1DE000F5C68 /* Main.storyboard in Resources */,
@@ -468,8 +502,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C7C1ED1CF6D3F800E19E09 /* IAPHelper.swift in Sources */,
 				A3A6E2E71C5FF1DE000F5C68 /* ViewController.swift in Sources */,
+				A3C7C1EB1CF6533400E19E09 /* emojiCollectionCell.swift in Sources */,
 				A3A6E2E51C5FF1DE000F5C68 /* AppDelegate.swift in Sources */,
+				A3C7C1EF1CF6D43A00E19E09 /* RageProducts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +629,7 @@
 			baseConfigurationReference = CD6F6EA941748D7B789076FC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Emoji Keyboard/LocaMoji.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Emoji Keyboard/Info.plist";
@@ -606,6 +644,7 @@
 			baseConfigurationReference = 421A01BCAF5FAA27C0B17B9C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Emoji Keyboard/LocaMoji.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: ONMILWAUKEE.COM, L.L.C (8HR5CN5CA2)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Emoji Keyboard/Info.plist";
@@ -619,6 +658,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD6F6EA941748D7B789076FC /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Milwaukee Emoji/Milwaukee Emoji.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Milwaukee Emoji/Info.plist";
@@ -640,6 +680,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 421A01BCAF5FAA27C0B17B9C /* Pods.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Milwaukee Emoji/Milwaukee Emoji.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: ONMILWAUKEE.COM, L.L.C (8HR5CN5CA2)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ONMILWAUKEE.COM, L.L.C (8HR5CN5CA2)";
 				INFOPLIST_FILE = "Milwaukee Emoji/Info.plist";
