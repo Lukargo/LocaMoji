@@ -12,6 +12,7 @@ class emojiCell: UICollectionViewCell {
 
     @IBOutlet var emojiIMage: UIImageView!
     @IBOutlet var copiedView: UILabel!
+    @IBOutlet var lockImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -73,6 +73,7 @@ When you're in your Messages app, tap the Globe at the bottom of the keyboard to
                     </view>
                     <connections>
                         <outlet property="collectionToLogoConstraint" destination="Bep-jf-cly" id="OVU-Pp-kVD"/>
+                        <outlet property="collectionView" destination="U1D-RX-YDk" id="boz-iZ-twR"/>
                         <outlet property="emojiCollectionView" destination="U1D-RX-YDk" id="OoT-Uo-w7d"/>
                         <outlet property="instructionsLabel" destination="HEZ-cA-xGI" id="YHi-dF-lo4"/>
                     </connections>

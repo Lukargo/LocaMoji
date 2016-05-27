@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Milwaukee Emoji/KeyboardViewController.swift"
-            timestampString = "485951501.225745"
+            timestampString = "486001036.992762"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "KeyboardViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Milwaukee Emoji/KeyboardViewController.swift"
-            timestampString = "485951501.225745"
+            timestampString = "486001036.992762"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -41,60 +41,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Milwaukee Emoji/KeyboardViewController.swift"
-            timestampString = "485951501.225745"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "KeyboardViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Milwaukee_Emoji.KeyboardViewController.emojiList.getter : Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "Milwaukee Emoji"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Luke/Personal%20iOS/Emoji%20Keyboard/Milwaukee%20Emoji/KeyboardViewController.swift"
-                  timestampString = "478045839.755816"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Milwaukee_Emoji.KeyboardViewController.init (Milwaukee_Emoji.KeyboardViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Milwaukee_Emoji.KeyboardViewController&gt;"
-                  moduleName = "Milwaukee Emoji"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Luke/Personal%20iOS/Emoji%20Keyboard/Milwaukee%20Emoji/KeyboardViewController.swift"
-                  timestampString = "478045839.756324"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "23">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Emoji Keyboard/ViewController.swift"
-            timestampString = "485975272.331716"
+            timestampString = "486001036.992762"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>

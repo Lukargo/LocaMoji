@@ -8,9 +8,11 @@
 
 import UIKit
 import Foundation
+import QuartzCore
 
 class KeyboardViewController: UIInputViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet var emojiCells: UICollectionView!
     
     let emojiList : [String] = ["test1", "test2"]
     
@@ -18,11 +20,13 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     
     let charStrings : [String] = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
     
-    let summerPack : Set<String> = ["Beach Volleyball Female", "Beach Volleyball Male", "Beer Garden", "Beer In Glass Stein", "Beer In Plastic Cup Stacked", "Beer In Plastic Cup", "Bob Uecker", "Cheese Curds Fried", "Cream Puff", "Custard Cone", "Miller Park Closed", "Miller Park Open", "Tailgating", "Underwear Ride Female", "Underwear Ride Male"]
     
-    let summerPackArray : [String] = ["Beach Volleyball Female", "Beach Volleyball Male", "Beer Garden", "Beer In Glass Stein", "Beer In Plastic Cup Stacked", "Beer In Plastic Cup", "Bob Uecker", "Cheese Curds Fried", "Cream Puff", "Custard Cone", "Miller Park Closed", "Miller Park Open", "Tailgating", "Underwear Ride Female", "Underwear Ride Male"]
+    let imageNames : [String] = ["Hoan Bridge", "Alice Cooper",  "Bob Uecker", "James Lovell", "Duane Hanson's \"Janitor\"", "Laverne", "Shirley", "The Milverine", "Vel Phillips", "Cheesehead (Female)", "Cheesehead (Male)", "Art Patrons", "Beach Volleyball (Female)", "Beach Volleyball (Male)", "Beer Garden", "Bublr Bike (Female)", "Bublr Bike (Male)", "Swing Park", "Shorts & Melting Snow (Female)", "Shorts & Melting Snow (Male)", "Tailgating", "Underwear Ride (Female)", "Underwear Ride (Male)", "Bronze Fonz’s Thumbs", "Alex Katz's \"Sunny #4\"", "Hank The Dog", "Bratwurst", "Cheese Curds Fried", "Cream Puff", "Custard Cone", "Fish Fry", "Hot Ham and Rolls", "Beer In Plastic Cup Stacked", "Beer In Plastic Cup", "Beer In Glass Stein", "Bloody Marry with Chaser", "Old Fashioned", "Rumchata", "A Shot and a Beer", "Accordian", "Bar Dice", "Beastie", "Mark di Suervo’s “The Calling”", "Dale Chihuly's \"Isola di San Giacomo in Palude Chandelier II\"", "Burke Brise Soleil - Open", "Burke Brise Soleil - Closed", "City Hall", "One Mitchell Park Dome", "The Mitchell Park Domes", "Lake Michigan", "Miller Park Closed", "Miller Park Open", "Mitchell Airport Arrive", "Mitchell Airport Depart", "Red Lighthouse",   "The Milwaukee Flag"]
     
-    var imagePaths : NSMutableArray!;
+    
+    let summerPack : Set<String> = ["Beach Volleyball (Female)", "Beach Volleyball (Male)", "Beer Garden", "Beer In Glass Stein", "Beer In Plastic Cup Stacked", "Beer In Plastic Cup", "Bob Uecker", "Cheese Curds Fried", "Cream Puff", "Custard Cone", "Miller Park Closed", "Miller Park Open", "Tailgating", "Underwear Ride (Female)", "Underwear Ride (Male)", "Hank The Dog", "Bublr Bike (Female)", "Bublr Bike (Male)", "Hank The Dog"]
+    
+
     
     var singleCharButtons : NSArray!
     
@@ -162,8 +166,6 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         
         self.deleteButton.addTarget(self.textDocumentProxy, action: #selector(UIKeyInput.deleteBackward), forControlEvents: .TouchUpInside)
         
-        imagePaths = NSMutableArray(array: NSBundle.mainBundle().pathsForResourcesOfType("png", inDirectory: nil))
-        
         self.heightContraint = NSLayoutConstraint(item: self.view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 0.0, constant: expandedHeight)
         
         self.normalHeightConstraint = NSLayoutConstraint(item: self.view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 0.0, constant: normalHeight)
@@ -190,6 +192,8 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         Localytics.openSession()
         
         print("Session Opened!")
+        
+        emojiCells.reloadData()
 
     }
     
@@ -225,22 +229,22 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(imagePaths.count)
         print(emojiCollectionView.frame.size)
         print(UIScreen.mainScreen().bounds)
-        return imagePaths.count + summerPack.count
+        return imageNames.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell : emojiCell =  emojiCollectionView.dequeueReusableCellWithReuseIdentifier("theOne", forIndexPath: indexPath) as! emojiCell
         cell.emojiIMage.contentMode = UIViewContentMode.ScaleAspectFit;
-        if(indexPath.row < imagePaths.count)
+        cell.lockImage.hidden = true;
+        cell.emojiIMage.image = UIImage(named: imageNames[indexPath.row])
+        cell.emojiIMage.alpha = 1
+        
+        if(summerPack.contains(imageNames[indexPath.row]) && !NSUserDefaults.init(suiteName: "group.com.onmilwaukee.locamoji")!.boolForKey("emojiPack1"))
         {
-            cell.emojiIMage.image = UIImage(contentsOfFile: imagePaths[indexPath.row] as! String)
-        }
-        else
-        {
-            cell.emojiIMage.image = UIImage(named: summerPackArray[indexPath.row - imagePaths.count])
+            cell.lockImage.hidden = false
+            cell.emojiIMage.alpha = 0.55
         }
         
         cell.copiedView.layer.cornerRadius = 8
@@ -253,9 +257,28 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let selectedCell : emojiCell = emojiCollectionView.cellForItemAtIndexPath(indexPath) as! emojiCell
-        UIPasteboard.generalPasteboard().image = UIImage(contentsOfFile: imagePaths[indexPath.row] as! String)
+        UIPasteboard.generalPasteboard().image = UIImage(named: imageNames[indexPath.row])
         
-        Localytics.tagEvent("Emoji Copied!", attributes: ["File" : imagePaths[indexPath.row].lastPathComponent as String])
+        if(summerPack.contains(imageNames[indexPath.row]) && !NSUserDefaults.init(suiteName: "group.com.onmilwaukee.locamoji")!.boolForKey("emojiPack1"))
+        {
+            let shake:CABasicAnimation = CABasicAnimation(keyPath: "position")
+            shake.duration = 0.1
+            shake.repeatCount = 2
+            shake.autoreverses = true
+            
+            let fromPoint:CGPoint = CGPointMake(selectedCell.lockImage.center.x - 5, selectedCell.lockImage.center.y)
+            let fromValue:NSValue = NSValue(CGPoint: fromPoint)
+            
+            let toPoint:CGPoint = CGPointMake(selectedCell.lockImage.center.x + 5, selectedCell.lockImage.center.y)
+            let toValue:NSValue = NSValue(CGPoint: toPoint)
+            
+            shake.fromValue = fromValue
+            shake.toValue = toValue
+            selectedCell.lockImage.layer.addAnimation(shake, forKey: "position")
+            return
+        }
+        
+        Localytics.tagEvent("Emoji Copied!", attributes: ["File" : imageNames[indexPath.row]])
         
         UIView.animateWithDuration(0.7, animations: { () -> Void in
             selectedCell.copiedView.hidden = false

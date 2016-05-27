@@ -11,15 +11,17 @@ import StoreKit
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
+    @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var collectionToLogoConstraint: NSLayoutConstraint!
     @IBOutlet var instructionsLabel: UILabel!
     @IBOutlet var textView: UITextView!
     @IBOutlet var emojiCollectionView: UICollectionView!
     var products = [SKProduct]()
     
-    let imageNames : [String] = ["Accordian", "Alice Cooper", "Bar Dice", "Beastie", "Bloody Marry with Chaser", "Bratwurst", "Bronze Fonz’s Thumbs", "Cheesehead (Female)", "Cheesehead (Male)", "City Hall", "Fish Fry", "One Mitchell Park Dome", "The Mitchell Park Domes", "Hoan Bridge", "Lake Michigan", "Laverne", "The Milverine", "The Milwaukee Flag", "Old Fashioned", "Rumchata", "Shirley", "Mark di Suervo’s “The Calling”", "Shorts & Melting Snow (Female)", "Shorts & Melting Snow (Male)", "Vel Phillips", "Hot Ham and Rolls", "James Lovell", "Red Lighthouse", "A Shot and a Beer", "Swing Park", "Burke Brise Soleil - Closed", "Burke Brise Soleil - Open", "Duane Hanson's \"Janitor\"", "Dale Chihuly's \"Isola di San Giacomo in Palude Chandelier II\"", "Alex Katz's \"Sunny #4\"", "Art Patrons", "Beach Volleyball Female", "Beach Volleyball Male", "Beer Garden", "Beer In Glass Stein", "Beer In Plastic Cup Stacked", "Beer In Plastic Cup", "Bob Uecker", "Cheese Curds Fried", "Cream Puff", "Custard Cone", "Miller Park Closed", "Miller Park Open", "Tailgating", "Underwear Ride Female", "Underwear Ride Male"]
+    let imageNames : [String] = ["Hoan Bridge", "Alice Cooper",  "Bob Uecker", "James Lovell", "Duane Hanson's \"Janitor\"", "Laverne", "Shirley", "The Milverine", "Vel Phillips", "Cheesehead (Female)", "Cheesehead (Male)", "Art Patrons", "Beach Volleyball (Female)", "Beach Volleyball (Male)", "Beer Garden", "Bublr Bike (Female)", "Bublr Bike (Male)", "Swing Park", "Shorts & Melting Snow (Female)", "Shorts & Melting Snow (Male)", "Tailgating", "Underwear Ride (Female)", "Underwear Ride (Male)", "Bronze Fonz’s Thumbs", "Alex Katz's \"Sunny #4\"", "Hank The Dog", "Bratwurst", "Cheese Curds Fried", "Cream Puff", "Custard Cone", "Fish Fry", "Hot Ham and Rolls", "Beer In Plastic Cup Stacked", "Beer In Plastic Cup", "Beer In Glass Stein", "Bloody Marry with Chaser", "Old Fashioned", "Rumchata", "A Shot and a Beer", "Accordian", "Bar Dice", "Beastie", "Mark di Suervo’s “The Calling”", "Dale Chihuly's \"Isola di San Giacomo in Palude Chandelier II\"", "Burke Brise Soleil - Open", "Burke Brise Soleil - Closed", "City Hall", "One Mitchell Park Dome", "The Mitchell Park Domes", "Lake Michigan", "Miller Park Closed", "Miller Park Open", "Mitchell Airport Arrive", "Mitchell Airport Depart", "Red Lighthouse",   "The Milwaukee Flag"]
     
-    let summerPack : Set<String> = ["Beach Volleyball Female", "Beach Volleyball Male", "Beer Garden", "Beer In Glass Stein", "Beer In Plastic Cup Stacked", "Beer In Plastic Cup", "Bob Uecker", "Cheese Curds Fried", "Cream Puff", "Custard Cone", "Miller Park Closed", "Miller Park Open", "Tailgating", "Underwear Ride Female", "Underwear Ride Male"]
+    
+    let summerPack : Set<String> = ["Beach Volleyball (Female)", "Beach Volleyball (Male)", "Beer Garden", "Beer In Glass Stein", "Beer In Plastic Cup Stacked", "Beer In Plastic Cup", "Bob Uecker", "Cheese Curds Fried", "Cream Puff", "Custard Cone", "Miller Park Closed", "Miller Park Open", "Tailgating", "Underwear Ride (Female)", "Underwear Ride (Male)", "Hank The Dog", "Bublr Bike (Female)", "Bublr Bike (Male)", "Hank The Dog"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +33,20 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             //instructionsLabel.frame = CGRectMake(0, 0, 0, 0)
             collectionToLogoConstraint.constant = 0
         }
+        
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.handlePurchaseNotification(_:)),
+                                                         name: IAPHelper.IAPHelperPurchaseNotification,
+                                                         object: nil)
+
         //textView.becomeFirstResponder()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    func handlePurchaseNotification(notification: NSNotification) {
+        self.collectionView.reloadData()
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -83,7 +97,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         if(summerPack.contains(imageNames[indexPath.row]))
         {
-            if(!NSUserDefaults.standardUserDefaults().boolForKey(RageProducts.SummerPack))
+            if(!NSUserDefaults.init(suiteName: "group.com.onmilwaukee.locamoji")!.boolForKey(RageProducts.SummerPack))
             {
                 cell.payWall.hidden = false
                 cell.emojiIMage.alpha = 0.55
@@ -106,6 +120,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        if(summerPack.contains(imageNames[indexPath.row]) && !NSUserDefaults.init(suiteName: "group.com.onmilwaukee.locamoji")!.boolForKey("emojiPack1"))
+        {
+            return
+        }
+        
         let itemsToShare = [UIImage(named: imageNames[indexPath.row])!]
         let activityVC = UIActivityViewController(activityItems: itemsToShare, applicationActivities: nil)
         

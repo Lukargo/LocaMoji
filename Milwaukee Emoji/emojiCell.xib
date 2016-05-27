@@ -23,6 +23,9 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lock-2" translatesAutoresizingMaskIntoConstraints="NO" id="owe-5I-TcL">
+                        <rect key="frame" x="25" y="27" width="15" height="16"/>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
@@ -31,11 +34,13 @@
             <connections>
                 <outlet property="copiedView" destination="xT1-ks-zH5" id="uS9-wr-6Sa"/>
                 <outlet property="emojiIMage" destination="gO3-fn-VQE" id="Rfq-W2-nFD"/>
+                <outlet property="lockImage" destination="owe-5I-TcL" id="HmQ-lM-DON"/>
             </connections>
             <point key="canvasLocation" x="225" y="303"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="cheesehead-male.png" width="140" height="140"/>
+        <image name="lock-2" width="23" height="26"/>
     </resources>
 </document>

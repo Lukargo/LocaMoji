@@ -9,6 +9,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="Milwaukee_Emoji" customModuleProvider="target">
             <connections>
                 <outlet property="deleteButton" destination="fls-Gn-dgO" id="Gvm-3d-og6"/>
+                <outlet property="emojiCells" destination="vD4-BB-dZr" id="wsH-08-aW8"/>
                 <outlet property="emojiCollectionView" destination="vD4-BB-dZr" id="14g-9j-ADS"/>
                 <outlet property="fullAccessWarningView" destination="zIm-ew-vk8" id="G3E-vA-Vr6"/>
                 <outlet property="keyHolderView" destination="oFb-hC-zgM" id="KhL-LG-nXd"/>

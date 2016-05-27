@@ -39,7 +39,7 @@ public class IAPHelper : NSObject  {
         self.productIdentifiers = productIds
         
         for productIdentifier in productIds {
-            let purchased = NSUserDefaults.standardUserDefaults().boolForKey(productIdentifier)
+            let purchased = NSUserDefaults.init(suiteName: "group.com.onmilwaukee.locamoji")!.boolForKey(productIdentifier)
             if purchased {
                 purchasedProductIdentifiers.insert(productIdentifier)
                 print("Previously purchased: \(productIdentifier)")
