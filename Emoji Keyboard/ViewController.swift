@@ -18,7 +18,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet var emojiCollectionView: UICollectionView!
     var products = [SKProduct]()
     
-    let imageNames : [String] = ["Hoan Bridge", "Alice Cooper",  "Bob Uecker", "James Lovell", "Duane Hanson's \"Janitor\"", "Laverne", "Shirley", "The Milverine", "Vel Phillips", "Cheesehead (Female)", "Cheesehead (Male)", "Art Patrons", "Beach Volleyball (Female)", "Beach Volleyball (Male)", "Beer Garden", "Bublr Bike (Female)", "Bublr Bike (Male)", "Swing Park", "Shorts & Melting Snow (Female)", "Shorts & Melting Snow (Male)", "Tailgating", "Underwear Ride (Female)", "Underwear Ride (Male)", "Bronze Fonz’s Thumbs", "Alex Katz's \"Sunny #4\"", "Hank The Dog", "Bratwurst", "Cheese Curds Fried", "Cream Puff", "Custard Cone", "Fish Fry", "Hot Ham and Rolls", "Beer In Plastic Cup Stacked", "Beer In Plastic Cup", "Beer In Glass Stein", "Bloody Marry with Chaser", "Old Fashioned", "Rumchata", "A Shot and a Beer", "Accordian", "Bar Dice", "Beastie", "Mark di Suervo’s “The Calling”", "Dale Chihuly's \"Isola di San Giacomo in Palude Chandelier II\"", "Burke Brise Soleil - Open", "Burke Brise Soleil - Closed", "City Hall", "One Mitchell Park Dome", "The Mitchell Park Domes", "Lake Michigan", "Miller Park Closed", "Miller Park Open", "Mitchell Airport Arrive", "Mitchell Airport Depart", "Red Lighthouse",   "The Milwaukee Flag"]
+    let imageNames : [String] = ["Hoan Bridge", "Alice Cooper",  "Bob Uecker", "James Lovell", "Duane Hanson's \"Janitor\"", "Laverne", "Shirley", "The Milverine", "Vel Phillips", "Cheesehead (Female)", "Cheesehead (Male)", "Art Patrons", "Beach Volleyball (Female)", "Beach Volleyball (Male)", "Beer Garden", "Bublr Bike (Female)", "Bublr Bike (Male)", "Swing Park", "Shorts & Melting Snow (Female)", "Shorts & Melting Snow (Male)", "Tailgating", "Underwear Ride (Female)", "Underwear Ride (Male)", "Bronze Fonz’s Thumbs", "Alex Katz's \"Sunny #4\"", "Hank The Dog", "Bratwurst", "Cheese Curds Fried", "Cream Puff", "Custard Cone", "Fish Fry", "Hot Ham and Rolls", "Beer In Plastic Cup Stacked", "Beer In Plastic Cup", "Beer In Glass Stein", "Bloody Marry with Chaser", "Old Fashioned", "Rumchata", "A Shot and a Beer", "Accordian", "Bar Dice", "Beastie", "Mark di Suervo’s “The Calling”", "Dale Chihuly's \"Isola di San Giacomo in Palude Chandelier II\"", "Burke Brise Soleil - Open", "Burke Brise Soleil - Closed", "City Hall", "One Mitchell Park Dome", "The Mitchell Park Domes", "Lake Michigan", "Miller Park Closed", "Miller Park Open", "Mitchell Airport Arrive", "Mitchell Airport Depart", "Red Lighthouse",   "The Milwaukee Flag", "Refresh"]
     
     
     let summerPack : Set<String> = ["Beach Volleyball (Female)", "Beach Volleyball (Male)", "Beer Garden", "Beer In Glass Stein", "Beer In Plastic Cup Stacked", "Beer In Plastic Cup", "Bob Uecker", "Cheese Curds Fried", "Cream Puff", "Custard Cone", "Miller Park Closed", "Miller Park Open", "Tailgating", "Underwear Ride (Female)", "Underwear Ride (Male)", "Hank The Dog", "Bublr Bike (Female)", "Bublr Bike (Male)", "Hank The Dog"]
@@ -94,23 +94,51 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         cell.emojiIMage.image = UIImage(named: imageNames[indexPath.row])
         cell.emojiNameLabel.text = imageNames[indexPath.row]
         cell.emojiIMage.alpha = 1
+        cell.buyButton.setNeedsDisplay()
         
-        if(summerPack.contains(imageNames[indexPath.row]))
+        if(summerPack.contains(imageNames[indexPath.row]) || imageNames[indexPath.row] == "Refresh")
         {
-            if(!NSUserDefaults.init(suiteName: "group.com.onmilwaukee.locamoji")!.boolForKey(RageProducts.SummerPack))
+            if(!NSUserDefaults.init(suiteName: "group.com.onmilwaukee.locamoji")!.boolForKey(RageProducts.SummerPack) || imageNames[indexPath.row] == "Refresh")
             {
                 cell.payWall.hidden = false
-                cell.emojiIMage.alpha = 0.55
                 cell.emojiNameLabel.text = ""
-                cell.buyButton.addTarget(self, action: #selector(ViewController.buyButtonClicked(_:)), forControlEvents: .TouchUpInside)
-                cell.buyButton.titleLabel?.textAlignment = NSTextAlignment.Center
+                                cell.buyButton.titleLabel?.textAlignment = NSTextAlignment.Center
                 cell.buyButton.layer.cornerRadius = 3
                 cell.buyButton.clipsToBounds = true
+
+                
+                if(imageNames[indexPath.row] == "Refresh")
+                {
+                    cell.emojiIMage.alpha = 1
+                    cell.buyButton.addTarget(self, action: #selector(ViewController.refreshButtonClicked(_:)), forControlEvents: .TouchUpInside)
+                    cell.buyButton.titleLabel?.text = nil
+                    cell.buyButton.titleLabel?.text = "Refresh Your Purchases"
+                    cell.buyButton.setTitle("Refresh Your Purchases", forState: UIControlState.Normal)
+                    cell.buyButton.backgroundColor = UIColor.init(red: 223/255.0, green: 82/255.0, blue: 36/255.0, alpha: 1.0)
+                    
+                    print("Blam blam blam")
+                }
+                else
+                {
+                    cell.emojiIMage.alpha = 0.55
+                    cell.buyButton.setTitle("Unlock Summer Pack", forState: UIControlState.Normal)
+                    cell.buyButton.addTarget(self, action: #selector(ViewController.buyButtonClicked(_:)), forControlEvents: .TouchUpInside)
+                    cell.buyButton.backgroundColor = UIColor.init(red: 60/255.0, green: 86/255.0, blue: 166/255.0, alpha: 1.0)
+
+                }
             }
             //cell.emojiNameLabel.text = "Giggle gigle";
         }
         
         return cell;
+    }
+    
+    func refreshButtonClicked(sender: AnyObject?)
+    {
+        let button = sender as! UIButton
+        print(button.titleLabel?.text)
+        print("Luke is such a dashing guy")
+        RageProducts.store.restorePurchases()
     }
     
     func buyButtonClicked(sender: AnyObject?)
@@ -121,7 +149,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        if(summerPack.contains(imageNames[indexPath.row]) && !NSUserDefaults.init(suiteName: "group.com.onmilwaukee.locamoji")!.boolForKey("emojiPack1"))
+        if(summerPack.contains(imageNames[indexPath.row]) && !NSUserDefaults.init(suiteName: "group.com.onmilwaukee.locamoji")!.boolForKey("emojiPack1") || imageNames[indexPath.row] == "Refresh")
         {
             return
         }
